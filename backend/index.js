@@ -19,7 +19,7 @@ app.use(express.json())
 
 app.use(cors(
     {
-    origins : "https://mern-bookstore-8rdx.vercel.app/",
+    origins : "https://mern-bookstore-8rdx.vercel.app",
     method:['GET','POST','PUT','DELETE'],
     credentials: true,
     allowedHeaders:['content.Type'],

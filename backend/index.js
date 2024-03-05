@@ -12,16 +12,18 @@ app.use(express.json())
 // middleware for handling cors police
 
 // option 1: allow all orgins with default of cors(*)
-app.use(cors());
+// app.use(cors());
 
 
 // option 2 : allow custom origins
 
-// app.use({
-//     origins : "http:/localhost:3000",
-//     method:['GET','POST','PUT','DELETE'],
-//     allowedHeaders:['content.Type'],
-// })
+app.use(cors(
+    {
+    origins : "https://mern-bookstore-8rdx.vercel.app/",
+    method:['GET','POST','PUT','DELETE'],
+    credentials: true,
+    allowedHeaders:['content.Type'],
+)})
 
 
 app.get("/", (req,res)=>{

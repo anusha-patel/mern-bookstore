@@ -22,7 +22,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
-      .post('https://mern-bookstore-psi.vercel.app/', data)
+      .post('https://mern-bookstore-psi.vercel.app/books', data)
       .then(() => {
         setLoading(false);
         // enqueueSnackbar('Book Created successfully', { variant: 'success' });

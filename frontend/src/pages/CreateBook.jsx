@@ -28,7 +28,7 @@ const CreateBooks = () => {
         // enqueueSnackbar('Book Created successfully', { variant: 'success' });
         navigate('/');
       })
-      .catch((error) => {
+      .catch((error) => { 
         setLoading(false);
         // alert('An error happened. Please Chack console');
         // enqueueSnackbar('Error', { variant: 'error' });
